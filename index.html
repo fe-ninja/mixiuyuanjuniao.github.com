@@ -1,15 +1,215 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>	
+<html>
 <head>
-	<title>米修</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href=""/>
+	<title>Slideshow 2!</title>
+	<meta charset="utf-8">
 	
-</head>
-<body style="text-align:center;">
-	<h1>hi,miss you</h1>
-	<img src="mi.jpg">
+	<link rel="stylesheet" href="css/slideshow.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	
+	<script src="js/mootools-1.3.2-core.js"></script>
+	<script src="js/mootools-1.3.2.1-more.js"></script>
+	<script src="js/slideshow.js"></script>	
+	<script src="js/slideshow.kenburns.js"></script>
+	<script src="js/slideshow.push.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.champagne.min.js"></script>
 
+	
+	<script>
+		window.addEvent('domready', function(){
+			var data = { 
+				'1.jpg':{ caption:'这姑凉是波斯来的吧。。。'}, 
+				'2.jpg':{ caption:'下次跑步可以叫我。。嘿嘿'}, 
+				'3.jpg':{ caption:'素颜的美，才是真的美啊！'}, 
+				
+				'5.jpg':{caption:'你是不相信爱情了么'},
+				'6.jpg':{caption:'赚钱的最佳境界：不劳而获！'},
+				'7.jpg':{caption:'火星男？'},
+				'8.jpg':{caption:'这姑凉应该有十八了吧。。'},
+				'9.jpg':{caption:'哎，你是单细胞吧，饿了就嗷嗷叫，喂饱了就嘻嘻笑！'},
+				'10.jpg':{caption:'小清新啊。。'},
+				'11.jpg':{caption:'他肯定是想换换口味，吃麻雀。。'},
+				
+				'13.jpg':{caption:'你也打台球？？？'},
+				
+				'15.jpg':{caption:'这都是你么。。'},
+				'16.jpg':{caption:'生日快乐'}
+				
+			};
+
+			
+			new Slideshow.KenBurns('kenburns', data, { duration: 5000, hu: 'images/', height: 400, width: 700 });
+
+			
+			
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="show">
+
+		<div id="kenburns" class="slideshow">
+			<img src="images/1.jpg" alt="1">
+		</div>
+
+	</div>
+
+	<div id="heart">
+		
+
+		<a href="letter/a.jpg" class="fancybox"><img src="lt/a.png" class="love-letter" style="position:absolute; left: 440px; top: 107px;"></a>
+		<a href="letter/b.jpg" class="fancybox"><img src="lt/b.png" class="love-letter" style="position:absolute; left: 395px; top: 71px;"></a>
+		<a href="letter/c.jpg" class="fancybox"><img src="lt/c.png" class="love-letter" style="position:absolute; left: 350px; top: 40px;"></a>
+		<a href="letter/d.jpg" class="fancybox"><img src="lt/d.png" class="love-letter" style="position:absolute; left: 296px; top: 66px;"></a>
+		<a href="letter/e.jpg" class="fancybox"><img src="lt/e.png" class="love-letter" style="position:absolute; left: 264px; top: 96px;"></a>
+		<a href="letter/f.jpg" class="fancybox"><img src="lt/f.png" class="love-letter" style="position:absolute; left: 234px; top: 139px;"></a>
+		<a href="letter/g.jpg" class="fancybox"><img src="lt/g.png" class="love-letter" style="position:absolute; left: 243px; top: 190px;"></a>
+		<a href="letter/h.jpg" class="fancybox"><img src="lt/h.png" class="love-letter" style="position:absolute; left: 261px; top: 239px;"></a>
+		<a href="letter/i.jpg" class="fancybox"><img src="lt/i.png" class="love-letter" style="position:absolute; left: 283px; top: 287px;"></a>
+		<a href="letter/j.jpg" class="fancybox"><img src="lt/j.png" class="love-letter" style="position:absolute; left: 319px; top: 324px;"></a>
+		<a href="letter/k.jpg" class="fancybox"><img src="lt/k.png" class="love-letter" style="position:absolute; left: 359px; top: 361px;"></a>
+		<a href="letter/l.jpg" class="fancybox"><img src="lt/l.png" class="love-letter" style="position:absolute; left: 395px; top: 396px;"></a>
+		<a href="letter/m.jpg" class="fancybox"><img src="lt/m.png" class="love-letter" style="position:absolute; left: 430px; top: 431px;"></a>
+
+		<a href="letter/love.jpg" class="fancybox"><img src="lt/love.png" class="love-letter" style="position:absolute; left: 469px; top: 460px;"></a>
+
+		<a href="letter/n.jpg" class="fancybox"><img src="lt/n.png" class="love-letter" style="position:absolute; left: 518px; top: 434px;"></a>
+		<a href="letter/o.jpg" class="fancybox"><img src="lt/o.png" class="love-letter" style="position:absolute; left: 556px; top: 399px;"></a>
+		<a href="letter/p.jpg" class="fancybox"><img src="lt/p.png" class="love-letter" style="position:absolute; left: 588px; top: 358px;"></a>
+		<a href="letter/q.jpg" class="fancybox"><img src="lt/q.png" class="love-letter" style="position:absolute; left: 617px; top: 315px;"></a>
+		<a href="letter/r.jpg" class="fancybox"><img src="lt/r.png" class="love-letter" style="position:absolute; left: 652px; top: 275px;"></a>
+		<a href="letter/s.jpg" class="fancybox"><img src="lt/s.png" class="love-letter" style="position:absolute; left: 677px; top: 238px;"></a>
+		<a href="letter/t.jpg" class="fancybox"><img src="lt/t.png" class="love-letter" style="position:absolute; left: 696px; top: 191px;"></a>
+		<a href="letter/u.jpg" class="fancybox"><img src="lt/u.png" class="love-letter" style="position:absolute; left: 701px; top: 143px;"></a>
+		<a href="letter/v.jpg" class="fancybox"><img src="lt/v.png" class="love-letter" style="position:absolute; left: 685px; top: 95px;"></a>
+		<a href="letter/w.jpg" class="fancybox"><img src="lt/w.png" class="love-letter" style="position:absolute; left: 644px; top: 63px;"></a>
+		<a href="letter/x.jpg" class="fancybox"><img src="lt/z.png" class="love-letter" style="position:absolute; left: 495px; top: 108px;"></a>
+    	<a href="letter/y.jpg" class="fancybox"><img src="lt/y.png" class="love-letter" style="position:absolute; left: 540px; top: 71px;"></a>
+    	<a href="letter/z.jpg" class="fancybox"><img src="lt/x.png" class="love-letter" style="position:absolute; left: 586px; top: 41px;"></a>
+
+
+
+
+    	
+    	<a href="letter/1.jpg" class="fancybox">
+    		<img src="lt/1.png" class="love-photo" style="position:absolute; left: 642px; top: 168px; width: 43px; height: 49px;"></a>
+    	
+    	<a href="letter/2.jpg" class="fancybox">
+    		<img src="lt/2.png" width="45" height="47" class="love-photo" style="position:absolute; left: 585px; top: 254px; width: 55px; height: 46px;"></a>
+    	
+    	<a href="letter/3.jpg" class="fancybox">
+    		<img src="lt/3.png" class="love-photo" style="position:absolute; left: 461px; top: 341px; width: 79px; height: 67px;"></a>
+    	
+    	<a href="letter/4.jpg" class="fancybox">
+    		<img src="lt/4.png" class="love-photo" style="position:absolute; left: 539px; top: 171px; width: 83px; height: 80px;"></a>
+    	
+    	<a href="letter/6.jpg" class="fancybox">
+    		<img src="lt/6.png" class="love-photo" style="position:absolute; left: 440px; top: 155px;"></a>
+    	
+    	<a href="letter/7.jpg" class="fancybox">
+    		<img src="lt/7.png" width="52" height="47" class="love-photo" style="position:absolute; left: 429px; top: 281px; width: 63px; height: 57px;"></a>
+    	
+    	<a href="letter/8.jpg" class="fancybox">
+    		<img src="lt/8.png" width="75" height="75" class="love-photo" style="position:absolute; left: 581px; top: 91px; width: 78px; height: 76px;"></a>
+    	
+    	<a href="letter/9.jpg" class="fancybox">
+    		<img src="lt/9.png" class="love-photo" style="position:absolute; left: 381px; top: 207px;"></a>
+    	
+    	<a href="letter/10.jpg" class="fancybox">
+    		<img src="lt/10.png" width="96" height="97" class="love-photo" style="position:absolute; left: 490px; top: 243px; width: 92px; height: 89px;"></a>
+    	
+    	<a href="letter/11.jpg" class="fancybox">
+    		<img src="lt/11.png" width="79" height="79" class="love-photo" style="position:absolute; left: 318px; top: 106px; width: 98px; height: 89px;"></a>
+    	
+    	<a href="letter/12.jpg" class="fancybox">
+    		<img src="lt/12.png" width="49" height="48" class="love-photo" style="position:absolute; left: 306px; top: 201px; width: 66px; height: 61px;"></a>
+
+    	<a href="letter/13.jpg" class="fancybox">
+    		<img src="lt/13.png" width="54" height="46" class="love-photo" style="position:absolute; left: 369px; top: 291px; width: 50px; height: 50px;"></a>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+		$(function(){
+			$(".fancybox").fancybox();
+		})
+</script>
+
+
+
+
+
+
+<div id="login" style="display:none;">
+	<a href="#" class="login-logo "></a>
+	<p class="login-tip" style="display:none;">密码不正确</p>
+	<input type="password" class="pwd"><br/>
+	<input type="button" class="sigin" value="">
+</div>
+	
+<script type="text/javascript">
+
+
+		(function(){
+
+			$("#login").fancybox({
+				closeBtn:false,
+				helpers : {
+				        overlay : {
+				            css : {
+				                'background' : 'rgba(0, 0, 0, 0.95)'
+				            }
+				        }
+				},
+				width:400,
+				height:300
+
+			}).trigger("click");
+
+
+			var p;
+			$(".pwd").focus(function(){
+				
+
+			}).keyup(function(){
+				p=$.trim($(this).val().toLowerCase());
+
+				if(p==="fangfang"){
+					$(".login-tip").hide();					
+					$(".login-logo").addClass("input-ok");
+				}else{
+					$(".login-logo").removeClass("input-ok");
+				}
+			});
+			$(".sigin").click(function(){
+
+
+				if(p==="fangfang"){
+					$.fancybox.close( true );
+					$(".login-tip").hide();
+				}else{
+					$(".login-tip").show();
+				}
+				
+			});
+
+			$("#login *,").click(function(){
+				return false;
+			});
+
+			$(".fancybox-overlay").unbind();
+		})();
+
+			
+		
+</script>
 	
 </body>
 </html>
