@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/jquery.champagne.min.js"></script>
-
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
 	
 	<script>
 		window.addEvent('domready', function(){
@@ -23,12 +23,12 @@
 				'1.jpg':{ caption:'这姑凉是波斯来的吧。。。'}, 
 				'2.jpg':{ caption:'下次跑步可以叫我。。嘿嘿'}, 
 				'3.jpg':{ caption:'素颜的美，才是真的美啊！'}, 
-				'5.jpg':{caption:'你是不相信爱情了么'},
-				'6.jpg':{caption:'赚钱的最佳境界：不劳而获！'},
+				'5.jpg':{caption:'肿么了，你是不相信爱情了么'},
+				'6.jpg':{caption:'赚钱的最佳境界：不劳而获啊！有木有'},
 				'7.jpg':{caption:'火星男？'},
 				'8.jpg':{caption:'这姑凉应该有十八了吧。。'},
 				'9.jpg':{caption:'哎，你是单细胞吧，饿了就嗷嗷叫，喂饱了就嘻嘻笑！'},
-				'10.jpg':{caption:'小清新啊。。'},
+				'10.jpg':{caption:'一个字，清新怡人啊。。'},
 				'11.jpg':{caption:'他肯定是想换换口味，吃麻雀。。'},	
 				'13.jpg':{caption:'你也打台球？？？'},
 				'15.jpg':{caption:'这都是你么。。'},
@@ -136,7 +136,16 @@
 <script type="text/javascript">
 		$(function(){
 			$(".fancybox").fancybox();
-		})
+		});
+		
+		
+		var $container = $('#imgBox');
+		$container.imagesLoaded(function(){
+		  $container.masonry({
+		    itemSelector : '.item',
+		    
+		  });
+		});
 </script>
 
 
@@ -207,6 +216,231 @@
 			
 		
 </script>
+
+	<div id="imgBox">
+	<div class="item">
+		<img src="images/animal/1.jpg"> <p>美女，我是青蛙王子，电话留一个呗</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/2.jpg"> <p>嗯？跟你说过多少遍了，我看报的时候不要来打扰我！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/3.jpg"> <p>讨厌！伦家真的不是汤圆啦！！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/4.gif"> <p>主银，你来啦，拉我一把好么。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/5.gif"> <p>“次奥，你说怎么打不开呢？” “次奥，你打不开，你打我有什么用？！” </p>
+	</div>
+	<div class="item">
+		<img src="images/animal/6.gif"> <p>这货会手语！和主淫沟通无障碍啊</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/7.jpg"> <p>躲了半天了都没人找着，真心无聊，孤独求败啊！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/8.gif"> <p>邪门了，我就不信要不疼你，我咬。。</p>
+	</div>
+
+
+
+
+
+	<div class="item">
+		<img src="images/animal/9.gif"> <p>叫你打我，要你好看！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/10.gif"> <p>不要吃惊，强迫症猫都这样</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/11.gif"> <p>猫粮呢？？？</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/12.gif"> <p>这脚也辛苦一天了，洗洗早点睡了</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/13.jpg"> <p>一到下午就一副死相</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/14.gif"> <p>小小吃货一枚</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/15.jpg"> <p>下午没带它们出去玩，一回家发现一个个都在装死~~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/16.jpg"> <p>麻麻，刚才邻居家的猫吃了这么大条与~~~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/17.gif"> <p>尼玛正愁没有伴，抓回去当压寨夫人！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/18.gif"> <p>孩子，你是切入“手动模式”了吧。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/19.jpg"> <p>神马，已经上了一天班，今天居然还是周一！！！！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/20.png"> <p>去逛街对吧？主银，我准备好了~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/21.gif"> <p>乖~听话，不要咬手指，有细菌的哦~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/22.gif"> <p>主银，看我发大招…… </p>
+	</div>
+	<div class="item">
+		<img src="images/animal/23.gif"> <p>小样，想摸我，没门！！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/24.jpg"> <p>喵了个咪的，撞衫了。。”“兔了个子的，撞衫了。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/25.jpg"> <p>来，我们比装死，看谁厉害。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/26.gif"> <p>昨天晚上跟男朋友聊到2点才睡，啊，好····困············</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/27.gif"> <p>躲猫猫被发现了......</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/28.gif"> <p>瘦不了的永远在骚动，吃不胖的都有恃无恐</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/29.gif"> <p>现在猫咪们不用自己的唾液洗脸了?高级了啊、、、</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/30.jpg"> <p>喵了个咪，隔壁又买黄花鱼了</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/31.gif"> <p>小样，偷拍，被我抓住了吧</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/32.jpg"> <p>知道什么叫优雅，什么叫气质~~！</p>
+	</div>
+
+
+	<div class="item">
+		<img src="images/animal/33.jpg"> <p>以萌为主，以二为辅</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/34.gif"> <p>睡觉前，还有比这俩二货做的事更无聊么</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/35.gif"> <p>快乐，就是这么简单！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/36.jpg"> <p>你妈喊你回家吃饭了</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/37.gif"> <p>哎，一到中午就想碎觉</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/38.gif"> <p>告诉你吧，我是外星鸟。。吓尿了吧</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/39.jpg"> <p>遥想当年小蛮腰，空余恨，一身五花膘。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/40.png"> <p>伦家真的没有画眼线喔……喔</p>
+	</div>
+
+	<div class="item">
+		<img src="images/animal/41.gif"> <p>跟你说了多少次了，不要摸我的脸。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/42.gif"> <p>打死你，打死你。。。。嗯？我们为什么打架！！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/43.gif"> <p>只要有鱼吃，我什么都会</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/44.jpg"> <p>偶很愤怒，为啥没鱼给偶吃。。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/45.gif"> <p>哥，我闻到胡萝卜味儿了”“没错，我也闻到了，就是这个味儿！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/46.gif"> <p>我可是当过兵的哟</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/47.gif"> <p>打发点吧。。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/48.jpg"> <p>你才是包子，你们全家都是包子。。</p>
+	</div>
+
+	<div class="item">
+		<img src="images/animal/49.jpg"> <p>早上抓了只老鼠，大概。。。差不多这么大只！！对，那么大只！！~~~~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/50.jpg"> <p>早上经常这样，偷偷瞟一眼舍友的床，只要有一个还在被窝里的，那就像真理一样，继续睡~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/51.gif"> <p>男朋友不要我了，撞死我好了</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/52.gif"> <p>“看我的软骨功~~”“不行啊，尾巴在外面，给你塞进去~~”</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/53.gif"> <p>叫你平常用鞭子打我，下去吧！你！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/54.gif"> <p>有种你学我！我让你哭的很有节奏...</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/55.gif"> <p>为了和洗澡做斗争，我练就了一身武艺。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/56.gif"> <p>嘿嘿，主银，吃什么呢，给我吃点</p>
+	</div>
+
+	<div class="item">
+		<img src="images/animal/57.gif"> <p>主银，我们来玩儿剪刀石头布吧</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/58.gif"> <p>就刚刚，女朋友说她喜欢上了一个高富帅。。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/59.jpg"> <p>这么大的虾，竟然只让我看，不让我吃！我很生气，很生气！</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/60.jpg"> <p>我们还能不能再见面， 我在佛前苦苦求了几千年。。。。。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/68.jpg"> <p>“120电话多少号啊？” “你傻啊？120多少号你不会打114问那？！”</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/61.jpg"> <p>脸大的忧伤你懂吗？</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/62.gif"> <p>无聊也是一种境界啊~</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/63.jpg"> <p>放开，我就看看，我不碰。。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/64.jpg"> <p>哥，妈妈呢，我饿了</p>
+	</div>
+
+	<div class="item">
+		<img src="images/animal/65.jpg"> <p>为了窈窕身材，我拼了……</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/66.gif"> <p>一个人吃，你好意思么</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/67.gif"> <p>呀，老婆，你回来啦，那货没把肿么样吧</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/69.gif"> <p>这位喵星人，睡觉都在打拍子。。太刻苦了！。。</p>
+	</div>
+	<div class="item">
+		<img src="images/animal/70.jpg"> <p>我一直在关注你，用一切你知道或不知道的方式……</p>
+	</div>
+	
+</div>
 	
 </body>
 </html>
